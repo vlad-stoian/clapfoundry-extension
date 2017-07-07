@@ -1,0 +1,20 @@
+{
+  "manifest_version": 2,
+
+  "name": "Clap Foundry",
+  "description": "This extension load the Clap Foundry Thingy",
+  "version": "1.0",
+
+  "content_scripts": [{
+  "all_frames": true,
+  "css": ["clapfoundry.css"],
+  "js": ["lib/jquery.js", "/js/clappy.js","/js/repository.js",  "clapfoundry.js"],
+  "matches": ["https://www.pivotaltracker.com/n/projects/*"]
+
+}],
+"web_accessible_resources": [
+    "frame.html",
+    "images/clap.png"
+]
+
+}
